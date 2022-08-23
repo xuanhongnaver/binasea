@@ -1,0 +1,41 @@
+
+/* 
+
+   * Button 
+
+*/
+
+@use './abstracts/' as *;
+
+
+
+.tf-section {
+    padding: 120px 0;
+    @include transition3;
+}
+
+/* button 
+--------------------------------------------------*/
+.tf-button {
+    display      : inline-block;
+    border       : 1px solid var(--primary-color4);
+    color        : var(--primary-color7);
+    background-color: var(--primary-color6);
+    box-sizing   : border-box;
+    padding      : 18px 36px;
+    border-radius: 99px;
+    @include transition3;
+    span {
+        font-weight       : 500;
+        font-size         : 16px;
+        line-height       : 18px;
+        position          : relative;
+        @include transition3;
+    }
+    &:hover,
+    &.active {
+        background-color: var(--primary-color3);
+        color: #fff;
+    }
+}
+
